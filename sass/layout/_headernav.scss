@@ -1,0 +1,33 @@
+.header__nav {
+  background-color: var(--color-white);
+  padding: 0.3rem 2rem;
+
+  // position: fixed;
+  width: inherit;
+
+  &--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--fav {
+      display: flex;
+      align-items: center;
+
+      &__img {
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+          margin-right: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

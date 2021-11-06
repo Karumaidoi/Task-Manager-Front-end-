@@ -1,0 +1,147 @@
+//all re-usable piece(s) of code should appear in this section.
+
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--color-primary-main);
+}
+
+.icon--active {
+  fill: var(--color-green);
+}
+
+.active {
+  border-right: 3px solid var(--color-green);
+  border-radius: 2px;
+}
+
+.active-link {
+  font-weight: 900;
+}
+
+.u-mg-right {
+  margin-right: 1rem;
+}
+
+.u-mg-right2 {
+  margin-right: 3rem;
+}
+
+.iconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.u-mg-top {
+  margin-top: 1.8rem;
+}
+
+.u-mg-topMain {
+  margin-top: 4.8rem;
+}
+
+.u-mg-btm {
+  margin-bottom: 1.7rem;
+}
+
+//@at-root
+.iconFront {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+//
+.u-pad-btn {
+  padding: 0.8ren 2rem;
+}
+
+//MENU
+.popupmenu {
+  position: relative;
+
+  &:hover &--cta {
+    display: inline-block;
+  }
+
+  &--cta {
+    position: absolute;
+    top: 1.7rem;
+    right: -1rem;
+    background-color: var(--color-white);
+    font-family: var(--font-display);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.192);
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+
+      border-bottom: 5px solid rgb(255, 255, 255);
+
+      top: -0.5rem;
+      left: 85%;
+      position: absolute;
+    }
+
+    &__links {
+      ul {
+        display: flex;
+        // align-items: flex-start;
+        flex-direction: column;
+
+        li {
+          list-style: none;
+
+          a,
+          :link,
+          :visited {
+            text-decoration: none;
+            font-size: 1.3rem;
+            display: block;
+
+            color: var(--color-primary-main);
+            font-weight: 700;
+            padding: 1rem 3rem;
+
+            &:hover {
+              background-color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//@at-root
+.hidden {
+  display: none;
+}
+
+//@at-root
+.todo {
+  border-top: 4px solid var(--color-green);
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  form {
+    input {
+      height: 4rem;
+    }
+  }
+}

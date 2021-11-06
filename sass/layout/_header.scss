@@ -1,0 +1,119 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 10fr;
+  grid-template-rows: 100vh;
+  grid-gap: 3rem;
+
+  &__nav {
+    background-color: var(--color-white);
+    padding: 1.4rem 0rem;
+    grid-row: 1 / -1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // min-height: 100vh;
+
+    &__acc {
+      height: 7rem;
+      border-radius: 50px;
+      padding: 5px;
+      box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.048);
+      background-color: var(--color-white);
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &--active {
+        background-color: var(--color-green);
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50px;
+        margin-bottom: 0.3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+          color: var(--color-primary);
+        }
+      }
+      img {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    &__links {
+      &--btn {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+
+        a {
+          margin-top: 3rem;
+          padding: 0 2.2rem;
+        }
+      }
+    }
+  }
+
+  &__body {
+    padding: 3rem;
+
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-rows: min-content 1fr;
+
+    &--top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__links {
+        a,
+        :link,
+        :visited {
+          text-decoration: none;
+          color: var(--color-primary-light);
+          font-size: 1.5rem;
+          margin-right: 3.6rem;
+
+          &:hover {
+            color: var(--color-black);
+          }
+        }
+      }
+    }
+    &--bottom {
+      &--top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &--grids {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+
+        margin-top: 5rem;
+
+        &__todo {
+          // height: 40rem;
+          // overflow-y: scroll;
+          &--cat {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

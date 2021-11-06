@@ -1,0 +1,86 @@
+.card {
+  background-color: var(--color-white);
+  margin: 1rem 0.3rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.048);
+
+  &-image {
+    height: 10rem;
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+
+    &__avatar {
+      img {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+      }
+    }
+
+    &__description {
+      margin-left: 1rem;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &-chips {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  &-description {
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+
+    &__time {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+//@at-root
+.chip {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 0.1rem 1rem;
+  border-radius: 200px;
+  margin-right: 0.6rem;
+}
+
+//DEAD//
+.chip2 {
+  background-color: var(--color-chip);
+  color: var(--color-white);
+  padding: 0.1rem 1rem;
+  border-radius: 200px;
+  margin-right: 0.6rem;
+}

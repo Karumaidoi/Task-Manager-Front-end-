@@ -1,0 +1,130 @@
+.section-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+
+  &__form {
+    background-color: var(--color-white);
+    padding: 3rem;
+    width: 40rem;
+    border-radius: 4px;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.048);
+
+    h1 {
+      color: var(--color-green);
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.form-group2 {
+  color: #777;
+  font-weight: 500;
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  label {
+    background-color: var(--color-green);
+    color: white;
+    padding: 1rem;
+    font-family: var(--font-display);
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+}
+
+.form-group3 {
+  color: #777;
+  font-weight: 500;
+}
+
+.form-group {
+  color: #777;
+  font-weight: 500;
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  textarea {
+    display: block;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    padding: 1.25rem 1.75rem;
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    background-color: #f2f2f2;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid #55c57a;
+    }
+  }
+
+  input {
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    padding: 1.25rem 1.75rem;
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    background-color: #f2f2f2;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid #55c57a;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid #ff7730;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #bbb;
+    }
+  }
+}
+
+//
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(
+    rgb(232, 240, 254),
+    rgba(70, 90, 126, 0.4)
+  ) !important;
+  color: -internal-light-dark(black, white) !important;
+}
+
+// ••••••••

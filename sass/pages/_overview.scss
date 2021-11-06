@@ -1,0 +1,40 @@
+.section-ATM {
+  padding: 5rem 0rem;
+  background-color: var(--color-white);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+
+    &--story {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+
+      &__title {
+        h1 {
+          line-height: 4rem;
+          font-size: 3.8rem;
+
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 300;
+          margin-top: 3rem;
+          line-height: 2.8rem;
+        }
+      }
+    }
+
+    &--image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+  }
+}

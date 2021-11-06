@@ -1,0 +1,56 @@
+.addTODO {
+  display: block;
+  position: fixed;
+
+  z-index: 10;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(1px), brightness(60%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//
+.select {
+  select {
+    padding: 1rem 0;
+    background-color: var(--color-primary);
+    border: none;
+    font-family: var(--font-display);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  label {
+    color: var(--color-primary-main);
+    margin-left: 1.6rem;
+    font-family: var(--font-display);
+
+    font-size: 1.5rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
